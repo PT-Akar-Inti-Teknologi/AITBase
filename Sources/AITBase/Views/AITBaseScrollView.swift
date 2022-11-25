@@ -12,7 +12,7 @@ private typealias `Self` = AITBaseScrollView
 open class AITBaseScrollView: UIScrollView {
     // MARK: - Properties
 
-    lazy var contentView: UIView = {
+    public lazy var contentView: UIView = {
         let contentView = UIView()
 
         return contentView
