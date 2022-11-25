@@ -35,10 +35,13 @@ open class AITBaseScrollView: UIScrollView {
 
         addSubview(contentView)
 
+        let heightConstraint = contentView.heightAnchor.constraint(equalTo: heightAnchor)
         contentView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         contentView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         contentView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         contentView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         contentView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
+        heightConstraint.priority = .defaultLow
+        heightConstraint.isActive = true
     }
 }
