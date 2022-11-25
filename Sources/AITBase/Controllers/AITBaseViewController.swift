@@ -25,7 +25,7 @@ open class AITBaseViewController: UIViewController {
 
     // MARK: - Properties
 
-    lazy var scrollView: AITBaseScrollView = {
+    public lazy var scrollView: AITBaseScrollView = {
         let scrollView = AITBaseScrollView()
 
         return scrollView
